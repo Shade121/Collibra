@@ -1,0 +1,104 @@
+.header {
+    position: relative;
+    min-height: 686px;
+    &_data {
+        background-color: #002b40;
+        min-height: 585px;
+    }
+    &_title {
+        font-family: GothicA1;
+        font-size: 68px;
+        font-weight: normal;
+        line-height: 1.06;
+        text-align: left;
+        color: #fff;
+        padding: 200px 0 0 136px;
+        span {
+            color: #72bf00;
+        }
+    }
+    &_descr {
+        margin: 55px 0 0 184px;
+        font-family: Amiri;
+        font-size: 18px;
+        font-weight: normal;
+        color: #fff;
+    }
+    &_forrester {
+        display: flex;
+        min-height: 151px;
+        background-color: #032736;
+        &-wrapper   {
+            padding: 48px 0 0 136px;
+        }
+        &-img {
+            width: 144px;
+            height: 21px;
+        }
+        &-descr {
+            font-family: GothicA1;
+            font-size: 17px;
+            font-weight: normal;
+            line-height: 1.55;
+            color: #fff;
+            margin-top: 7px;
+        }
+        a {
+            font-family: GothicA1;
+            font-size: 12px;
+            font-weight: normal;
+            color: #fff;
+            margin: auto 136px;
+            text-decoration: none;
+        }
+    }
+    &_watch {
+        position: absolute;
+        top: 108px;
+        right: 0;
+        width: 568px;
+        img {
+            width: auto;
+        }
+        &-wrapper {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
+            width: 75%;          
+            bottom: 80px;
+            left: 100px;
+        }
+        
+        &-descr {
+            font-family: GothicA1;
+            font-size: 22px;
+            font-weight: normal;
+            color: #fff;
+            margin-left: 30px;
+            
+        }
+        .btn {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: #fff;
+        }    
+    }
+    .triangle {
+        padding: 0;
+        position: relative;
+        &:after {
+            content: ''; 
+            position: absolute; 
+            left: 70%; 
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 8px solid transparent; 
+            border-left: 8px solid #00755f;
+        }
+        
+    }
+    
+}

@@ -1,0 +1,17 @@
+font-face {
+    font-family: 'Amiri';
+    font-display: swap;
+    src: local('Amiri'), local('Amiri-Regular'),
+        url('../fonts/Amiri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothicA1';
+    font-display: swap;
+    src: local('GothicA1'), local('GothicA1-Regular'),
+        url('../fonts/GothicA1-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
