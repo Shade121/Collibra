@@ -72,6 +72,10 @@ gulp.task('downloads', function(){
     return gulp.src("src/downloads/**/*")
     .pipe(gulp.dest("dist/downloads"));
 });
+gulp.task('video', function(){
+    return gulp.src("src/video/**/*")
+    .pipe(gulp.dest("dist/video"));
+});
 
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'script', 'fonts', 'icons', 'mailer', 'downloads', 'imageminWebp' ));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'script', 'fonts', 'icons', 'mailer', 'downloads', 'imageminWebp', 'video' ));

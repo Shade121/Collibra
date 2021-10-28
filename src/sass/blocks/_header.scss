@@ -1,9 +1,10 @@
 .header {
     position: relative;
+    width: 100%;
     min-height: 686px;
     &_data {
         background-color: #002b40;
-        min-height: 585px;
+        min-height: 535px;
     }
     &_title {
         font-family: GothicA1;
@@ -17,7 +18,7 @@
             color: #72bf00;
         }
     }
-    &_descr {
+    &_subtitle {
         margin: 55px 0 0 184px;
         font-family: Amiri;
         font-size: 18px;
@@ -26,16 +27,24 @@
     }
     &_forrester {
         display: flex;
+        align-items: center;
         min-height: 151px;
         background-color: #032736;
         &-wrapper   {
-            padding: 48px 0 0 136px;
+           padding-left: 136px;
         }
-        &-img {
-            width: 144px;
-            height: 21px;
+        &-title {
+            font-family: Amiri;
+            font-size: 28px;
+            font-weight: normal;
+            color: #fff;
+            text-transform: uppercase;
+            span {
+                font-size: 10px;
+                vertical-align: super;
+            }
         }
-        &-descr {
+        &-subtitle {
             font-family: GothicA1;
             font-size: 17px;
             font-weight: normal;
@@ -50,16 +59,18 @@
             color: #fff;
             margin: auto 136px;
             text-decoration: none;
+            &:hover {
+                color: #72bf00;
+            }
         }
     }
     &_watch {
         position: absolute;
-        top: 108px;
+        top: 88px;
         right: 0;
         width: 568px;
-        img {
-            width: auto;
-        }
+        height: 701px;
+        background: url(../img/point.webp) center (center / cover) no-repeat;
         &-wrapper {
             position: absolute;
             display: flex;
@@ -69,13 +80,19 @@
             bottom: 80px;
             left: 100px;
         }
+        &-btn {
+            width: 20%;
+        }
         
-        &-descr {
+        &-subtitle {
             font-family: GothicA1;
             font-size: 22px;
             font-weight: normal;
             color: #fff;
             margin-left: 30px;
+            &_black {
+                color: #032736;
+            }
             
         }
         .btn {
@@ -84,6 +101,12 @@
             border: none;
             border-radius: 50%;
             background-color: #fff;
+            &:hover {
+                background: #032736;
+            }
+            &:focus {
+                box-shadow: none;
+            }
         }    
     }
     .triangle {

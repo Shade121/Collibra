@@ -1,242 +1,200 @@
-@media (max-width: 1200px) {
-    .navbar {
-        display: flex;
-        justify-content: flex-start;
+@media (max-width: 1326px) {
+    .header {
+        min-height: 450px;
+        &_data {
+            min-height: 400px;
+        }
+        
+        &_title {
+            padding: 100px 0 0 136px;
+        }
+        &_forrester {
+            min-height: 126px;
+            &-wrapper {
+                padding-left: 60px;
+            }
+        }
+        &_watch {
+            top: 60px;
+            width: 457px;
+            height: 547px;
+            &-wrapper {
+                width: 83%;
+                bottom: 50px;
+                left: 76px;
+            }
+        }
     }
-    .feed-form {
-        .col-lg-5 {
-            display: flex;
+}
+@media (max-width: 1200px) {
+    .header {
+        &_title {
+            font-size: 65px;
+            padding: 60px 0 0 60px;
+        }
+        &_forrester {
             flex-direction: column;
+            align-items: flex-start;
+            &-wrapper {
+                padding-top: 15px;
+            }
+            &-subtitle {
+                margin-bottom: 0;
+            }
+            a {
+                margin-left: 60px;;
+            }
         }
     }
 }
 @media (max-width: 991px) {
-    .container {
-        padding: 0 20px;
-    }
     .header {
-        padding: 10px 0 15px;
-        .logo {
-            font-size: 18px;
-            margin-top: 5px;
+        &_data {
+            min-height: 270px;
         }
-    }
-    .navbar {
-        display: none;
-    }
-    .mobile {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: -100%;
-        width: 100%;
-        height: 100vh;
-        padding: 20px 15px;
-        background-color: rgba(36, 5, 173, 0.8);
-        transition: 0.6s all;
-        z-index: 10;
-        &.active {
-            top: 0%;
-        }  
-    }
-    .menu {
-        &-mobile {
-            &_item {
-                padding-right: 0;
-                border: none;
-                margin: 20px;
-                list-style-type: none;
-                padding: 0 10px 0 10px;
-            }            
-            &_link {
-                font-size: 19px;
-                color: #efefef;
-                font-size: 15px;
-                font-weight: 700;
-                text-decoration: none;
-                text-transform: uppercase;
-                opacity: 0.8;
-                &:hover {
-                    transition: all 0.3s ease;
-                    text-decoration: underline;
-                    color: $accent-color;
-                }
-            }
-        } 
-    }
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 12px;
-        z-index: 100;
-        span {
-            display: block;
-            height: 2px;
-            width: 100%;
-            background-color: $accent-color;
-            margin-bottom: 2px;
-            transition: 0.5s all;
-        }
-        &.active {
-            span {
-                // background-color: #efefef;
-                margin-bottom: -2px;
-                &:nth-child(1) {
-                    transform: translateY(3px) rotate(-45deg);
-                }
-                &:nth-child(2) {
-                    display: none;
-                }
-                &:nth-child(3) {
-                    transform: translateY(3px) rotate(45deg);
-                }
-            }
-        } 
-    }
-    .about {
-        &_img {
-            margin-bottom: 20px;
-        }
-    }
-    .portfolio_wrapper {
-        width: 50%;
-    }
-    .modal {
-        &-contact {
-            width: 600px;
-            padding: 25px;
-        }
-        &_mini {
-            width: 600px;
-        }
-        &-dialog {
-            width: 600px;
+        &_title {
+            font-size: 45px;
         }
         &_subtitle {
-            font-size: 27px;
+            margin: 25px 0 0 60px;
+        }
+        &_forrester {
+            &-title {
+                font-size: 25px;
+            }
+            &-subtitle {
+                font-size: 15px;
+            }
+        }
+        &_watch {
+            width: 300px;
+            height: 381px;
+            &-wrapper {
+                bottom: 40px;
+                left: 46px;
+            }
+            &-subtitle {
+                font-size: 15px;
+            }
+            .btn {
+                width: 45px;
+                height: 45px;
+            }
         }
     }
 }
 @media (max-width: 767px) {
-    .container {
-        max-width: none;
-    }
-    .modal {
-        &-contact {
-            width: 450px;
-        }
-        &_mini {
-            width: 450px;
-        }
-        &-dialog {
-            width: 450px;
+    .header {
+        &_title {
+            padding-left: 30px;
+            font-size: 35px;
         }
         &_subtitle {
-            font-size: 22px;
+            margin-left: 30px;
         }
-        &_descr {
-            font-size: 15px;
-        }
-        &-footer {
-            .button {
-                margin-right: 0;
-                &:last-child {
-                    margin-left: 30px;
-                }
+        &_forrester {
+            &-wrapper {
+                padding-left: 30px;
+            }
+            &-subtitle {
+                font-size: 12px;
             }
         }
-    }
-    .feed-form {
-        &_message {
-            button {
-                margin: 15px 0 0 0;
-                &:last-child {
-                    margin-left: 37px;
-                }
-            }
+        a {
+            margin-left: 30px;
         }
     }
 }
 @media (max-width: 575px) {
-    .portfolio_wrapper {
-        width: 100%;
+    .header {
+        &_title {
+            font-size: 25px;
+            padding-left: 20px;
+        }
+        &_subtitle {
+            font-size: 12px;
+            margin-left: 20px;
+        }
+        &_forrester {
+            &-wrapper {
+                padding-left: 20px;
+            }
+            &-title {
+                font-size: 23px;
+            }
+            &-subtitle {
+                width: 80%;
+                font-size: 10px;
+            }
+            a {
+                margin-left: 20px;
+            }
+        }
     }
     .modal {
-        
-        &-dialog {
-            margin: 28px auto;
+        &-body {
+            video {
+                width: 432px;
+                height: auto;
+            }
         }
     }
 }
 
 @media (max-width: 480px) {
-    .button {
-        width: 100%;
-    }
-    .button_gray {
-        margin-top: 20px;
-    }
-    .feed-form {
-        &_message {
-            button {
-                &:last-child {
-                    margin-left: 0;
-                }
+    .header {
+        &_title {
+            padding-top: 30px;
+        }
+        &_forrester {
+            &-title {
+                font-size: 20px;
             }
-            textarea {
-                height: 100px;
+            &-subtitle {
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+        &_watch {
+            width: 134px;
+            height: 219px;
+            top: 75px;
+            &-wrapper {
+                left: -164px;
+                bottom: 58px;
+                width: 170%;
+                flex-direction: row-reverse;
+            }
+            &-subtitle {
+                margin: 0 15px 0 0;
+                text-align: right;
+            }
+            .btn {
+                width: 37px;
+                height: 37px;
+            }
+        }
+        .triangle {
+            &:after {
+                left: 87%;
             }
         }
     }
     .modal {
-        &-contact {
-            width: 400px;
-            padding: 15px;
-        }
-        &_mini {
-            width: 400px;
-        }
-        &-dialog {
-            width: 400px;
-        }
-        &_descr {
-            font-size: 14px;
-            margin-bottom: 0;
-        }
-        &-footer {
-            .button {
-                &:last-child {
-                    margin-left: 0;
-                }
+        &-body {
+            video {
+                width: 320px;
+                height: auto;
             }
         }
     }
 }
-@media (max-width: 425px) {
+@media (max-width: 370px) {
     .modal {
-        &-contact {
-            width: 300px;
-        }
-        &_mini {
-            width: 300px;
-        }
-        &-dialog {
-            width: 300px;
-        }
-        &_subtitle {
-            font-size: 21px;
-        }
-        &-footer {
-            .button {
-                &:last-child {
-                    margin-left: 0;
-                }
+        &-body {
+            video {
+                width: 270px;
+                height: auto;
             }
         }
     }
