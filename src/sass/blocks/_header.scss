@@ -15,7 +15,7 @@
         color: #fff;
         padding: 200px 0 0 136px;
         span {
-            color: #72bf00;
+            color: $hover-color;
         }
     }
     &_subtitle {
@@ -60,7 +60,7 @@
             margin: auto 136px;
             text-decoration: none;
             &:hover {
-                color: #72bf00;
+                color: $hover-color;
             }
         }
     }
@@ -91,7 +91,7 @@
             color: #fff;
             margin-left: 30px;
             &_black {
-                color: #032736;
+                color: $text-color;
             }
             
         }
@@ -102,7 +102,7 @@
             border-radius: 50%;
             background-color: #fff;
             &:hover {
-                background: #032736;
+                background: $text-color;
             }
             &:focus {
                 box-shadow: none;

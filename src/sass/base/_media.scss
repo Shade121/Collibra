@@ -82,6 +82,22 @@
             }
         }
     }
+    .insights {
+        margin-top: 100px;
+        &_descr {
+            margin-left: 35px;
+        }
+        &_title {
+            font-size: 25px;
+        }
+        &_text {
+            width: 100%;
+            margin-top: 0;
+        }
+        &_watch {
+            margin-top: 0;
+        }
+    }
 }
 @media (max-width: 767px) {
     .header {
@@ -102,6 +118,30 @@
         }
         a {
             margin-left: 30px;
+        }
+    }
+    .insights {
+        &_wrapper {
+            flex-direction: column;
+        }
+        &_img {
+            width: 70%;
+            
+        }
+        &_descr {
+            width: 70%;
+            margin: 15px 0 0 0;
+            align-self: flex-end;
+        }
+        &_chat {
+            text-align: right;
+            margin-right: 15px;
+            text-decoration: underline;
+        }
+        &_watch {
+            text-align: right;
+            margin-right: 15px;
+            text-decoration: underline;
         }
     }
 }
@@ -139,6 +179,7 @@
             }
         }
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -160,18 +201,19 @@
             height: 219px;
             top: 75px;
             &-wrapper {
-                left: -164px;
-                bottom: 58px;
+                left: -92px;
+                bottom: 13px;
                 width: 170%;
-                flex-direction: row-reverse;
+                flex-direction: column;
             }
             &-subtitle {
-                margin: 0 15px 0 0;
+                margin: 9px 15px 0 0;
                 text-align: right;
             }
             .btn {
                 width: 37px;
                 height: 37px;
+                margin-left: 32px;
             }
         }
         .triangle {
@@ -188,6 +230,18 @@
             }
         }
     }
+    .insights {
+        margin-top: 20px;
+        &_title {
+            font-size: 20px;
+        }
+        &_text {
+            font-size: 15px;
+        }
+        &_watch {
+            font-size: 14px;
+        }
+    }
 }
 @media (max-width: 370px) {
     .modal {
@@ -197,5 +251,14 @@
                 height: auto;
             }
         }
+    }
+    .insights {
+        &_img {
+            width: 100%;
+        }
+        &_descr {
+            width: 100%;
+            padding: 10px;
+        }    
     }
 }
