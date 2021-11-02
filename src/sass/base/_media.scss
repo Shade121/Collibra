@@ -46,6 +46,12 @@
             }
         }
     }
+    .trust {
+        margin-top: 30px;
+        &_title {
+            width: 85%;
+        }
+    }
 }
 @media (max-width: 991px) {
     .header {
@@ -84,6 +90,7 @@
     }
     .insights {
         margin-top: 100px;
+        min-height: 300px;
         &_descr {
             margin-left: 35px;
         }
@@ -98,6 +105,34 @@
             margin-top: 0;
         }
     }
+    .modal {
+        &-dialog {
+            max-width: 750px;
+        }
+        &-body {
+            video {
+                width: 720px;
+                height: auto;
+            }
+        }
+    }
+    .trust {
+        &_title {
+            font-size: 30px;
+            width: 95%;
+            span {
+                font-size: 28px;
+            }
+        }
+        &_cards {
+            margin-top: 0;
+        }
+        &_card {
+            margin-top: 50px;
+        }
+        
+    }
+    
 }
 @media (max-width: 767px) {
     .header {
@@ -144,6 +179,29 @@
             text-decoration: underline;
         }
     }
+    .modal {
+        &-dialog {
+            max-width: 540px;
+        }
+        &-body {
+            video {
+                width: 510px;
+                height: auto;
+            }
+        }
+    }
+    .trust {
+        &_title {
+            font-size: 24px;
+            width: 100%;
+            span {
+                font-size: 24px;
+            }
+        }
+        &_link {
+            margin-top: 25px;
+        }
+    }
 }
 @media (max-width: 575px) {
     .header {
@@ -179,7 +237,14 @@
             }
         }
     }
-    
+    .trust {
+        &_title {
+            font-size: 21px;
+            span {
+                font-size: 21px;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {

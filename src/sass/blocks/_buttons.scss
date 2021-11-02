@@ -1,0 +1,19 @@
+.button {
+    &_trust {
+        width: 156px;
+        height: 35px;
+        border: none;
+        background: #eff2f3;
+        font-family: GothicA1;
+        font-size: 12px;
+        color: #5e7177;
+        transition: all 0.3s ease;
+        &:hover, &:active, &:focus {
+            box-shadow: 10px 10px 20px rgba(#252525, 0.2);
+            color: #5e7177;
+        }
+        &:active {
+            background: #c7c7c7;
+        }
+    }
+}

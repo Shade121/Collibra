@@ -1,0 +1,64 @@
+.trust {
+    margin-top: 112px;
+    background-color: #fff;
+    &_title {
+        margin: 23px 0 0 0;
+        font-family: GothicA1;
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 1.1;
+        color: $text-color;
+        width: 73%;
+        span {
+            font-size: 34px;
+            font-weight: normal;
+            line-height: 1.17;
+            color: #00755f;
+        }
+    }
+    &_cards {
+        display: flex;
+        margin-top: 100px;
+    }
+    &_card {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 75px;
+        &:last-child {
+            margin-right: 0;
+        }
+        img {
+            width: 64px;
+            height: auto;
+        }
+        &-title {
+            font-family: GothicA1;
+            font-size: 17px;
+            font-weight: normal;
+            color:$text-color;
+        }
+    }
+    &_wrapper {
+        margin: 10px 0 0 17px;
+    }
+    &_descr {
+        margin-top: 19px;
+        font-family: Amiri;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.5;
+        color: $text-color;
+    }
+    &_link {
+        display: inline-block;
+        margin-top: 52px;
+        font-family: GothicA1;
+        font-size: 15px;
+        font-weight: normal;
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}

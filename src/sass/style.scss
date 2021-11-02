@@ -8,9 +8,11 @@
     font-family: 'Amiri', serif;
     font-family: 'Gothic A1', sans-serif;
 }
-
+@import 'blocks/modal';
+@import 'blocks/buttons';
 @import 'blocks/header';
 @import 'blocks/insights';
+@import 'blocks/trust';
 @import 'base/media';
 
 

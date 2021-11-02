@@ -2,56 +2,30 @@ $(document).ready(function () {
 
     'use strict';
 
-    //mobile-menu
-    $('.hamburger').on('click', function () {
-        $('.mobile, .hamburger').toggleClass('active');
-    
-    });
-    $('.mobile ul li a').on('click', function () {
-        $('.mobile, .hamburger').removeClass('active');
-    });
-    
-    //fixed header
-    function fixedHeader() {
-        const ww = $(window).scrollTop();
-        if (ww > 0) {
-            $('.header').addClass('active');
-        } else {
-            $('.header').removeClass('active');
-        }
-    }
-    fixedHeader();
-    $(window).on('scroll', function () {
-        fixedHeader();
+    // active-tabs    
+    $('div.industries_tabs, ul.dropdown-menu').on('click', 'li:not(.industries_tab-active)', function () {
+        $(this)
+            .addClass('industries_tab-active').siblings().removeClass('industries_tab-active')
+            .closest('div.container').find('div.industries_item').removeClass('industries_item-active').eq($(this).index()).addClass('industries_item-active');
     });
 
-    //   scroll to anchor
-    $('.navbar ul li a[href*="#"], .mobile ul li a[href*="#"]').on('click',
-        function (event) {
-            event.preventDefault();
-            const margin = $('.header').outerHeight();
-            const anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top - margin
-            }, 300);
-            return false;
+    function toggleSlide(item) {
+        $(item).each(function (i) {
+            $(this).on('click', function (e) {
+                e.preventDefault();
+                $('.industries_item').eq(i).toggleClass('industries_item-active');
+            });
         });
+    }
+    toggleSlide('.industries_link');
+    toggleSlide('.button_mini');
 
     // Portfolio modal
-    $('#portfolio-modal').on('show.bs.modal', function (event) {
+    $('#learn_more').on('show.bs.modal', function (event) {
         const button = $(event.relatedTarget);
         const workName = button.data('name');
         $(this).find('.modal-body').hide();
         $('.modal-body[data-name = ' + workName + ']').show();
-    });
-
-    // Modal contacts
-    $('[data-modal=contact_message]').on('click', function () {
-        $('.overlay, #contact_message').fadeIn('slow');
-    });
-
-    $('.modal_close').on('click', function () {
-        $('.overlay, #contact_message, #thanks').fadeOut('slow');
     });
 
     //Valide Forms
