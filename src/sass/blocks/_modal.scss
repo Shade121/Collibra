@@ -16,14 +16,13 @@
         color: $text-color;
     }
     &-footer {
-        justify-content: flex-start;
+        justify-content: flex-end;
+        font-family: GothicA1;
+        font-size: 20px;
+        font-weight: normal;
+        color: $text-color;
     }
-    &_subtitle {
-        color: #0D0D0D;
-        font-weight: 700;
-        font-size: 30px;
-        text-align: left;
-    }
+    
     &_descr {
         color: #0D0D0D;
         font-weight: 500;
