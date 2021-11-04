@@ -52,6 +52,18 @@
             width: 85%;
         }
     }
+    .connected {
+        &_wrapper {
+            padding-top: 170px;
+            justify-content: space-around;
+        }
+        &_text {
+            margin-right: 90px;
+        }
+        &_title {
+            font-size: 45px;
+        }
+    }
 }
 @media (max-width: 991px) {
     .header {
@@ -130,9 +142,20 @@
         &_card {
             margin-top: 50px;
         }
-        
     }
-    
+    .connected {
+        &_wrapper {
+            flex-direction: column;
+            padding-top: 65px;
+        }
+        &_text {
+            width: 85%;
+        }
+        &_squares {
+            align-self: flex-end;
+            margin-top: 100px;
+        }
+    }
 }
 @media (max-width: 767px) {
     .header {
@@ -202,6 +225,14 @@
             margin-top: 25px;
         }
     }
+    .connected {
+        &_text {
+            width: 100%;
+        }
+        &_squares {
+            margin: 135px 100px 0 0;
+        }
+    }
 }
 @media (max-width: 575px) {
     .header {
@@ -242,6 +273,61 @@
             font-size: 21px;
             span {
                 font-size: 21px;
+            }
+        }
+    }
+    .connected {
+        margin-top: 30px;
+        &_title {
+            font-size: 35px;
+        }
+        &_square {
+            &-big {
+                width: 215px;
+                height: 215px;
+            }
+            &-medium {
+                width: 185px;
+                height: 185px;
+            }
+            &-small {
+                width: 65px;
+                height: 65px;
+                &-one {
+                    top: -95px;
+                    right: 60px;
+                }
+                &-two {
+                    top: -46px;
+                }
+                &-three {
+                    top: 35px;
+                    right: -97px;
+                }
+                &-four {
+                    right: -85px;
+                }
+                &-five {
+                    bottom: -80px;
+                }
+                &-six {
+                    bottom: -95px;
+                    left: 60px;
+                }
+                &-seven {
+                    bottom: -50px;
+                    left: -35px;
+                }
+                &-eight {
+                    bottom: 35px;
+                    left: -97px;
+                }
+                &-nine {
+                    left: -85px;
+                }
+                &-ten {
+                    top: -80px;
+                }
             }
         }
     }
@@ -307,6 +393,7 @@
             font-size: 14px;
         }
     }
+    
 }
 @media (max-width: 370px) {
     .modal {
@@ -325,5 +412,63 @@
             width: 100%;
             padding: 10px;
         }    
+    }
+    .connected {
+        &_title {
+            font-size: 26px;
+        }
+        &_descr {
+            font-size: 15px;
+        }
+        &_subtitle {
+            font-size: 13px;
+        }
+        &_squares {
+            margin: 100px 78px 0 0;
+        }
+        &_square {
+            &-small {
+                &-one {
+                    top: -85px;
+                    right: 68px;
+                }
+                &-two {
+                    top: -43px;
+                    right: -10px;
+                }
+                &-three {
+                    top: -15px;
+                    right: -84px;
+                }
+                &-four {
+                    bottom: 88px;
+                    right: -74px;
+                }
+                &-five {
+                    bottom: 10px;
+                    right: -84px;
+                }
+                &-six {
+                    bottom: -68px;
+                    left: 229px;
+                }
+                &-seven {
+                    bottom: -93px;
+                    left: 148px;
+                }
+                &-eight {
+                    bottom: -77px;
+                    left: 68px;
+                }
+                &-nine {
+                    left: -9px;
+                    top: 245px;
+                }
+                &-ten {
+                    top: -75px;
+                    left: 5px;
+                }
+            }
+        }
     }
 }
